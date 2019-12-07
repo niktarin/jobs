@@ -1,0 +1,510 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uppeople Lviv</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport">
+    <link href="{% static "styles/normalize.css" %}" rel="stylesheet">
+    <link href="{% static "styles/bootstrap.min.css" %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static "libs/font-awesome/css/font-awesome.min.css" %}">
+    <link href="{% static "styles/main.css" %}" rel="stylesheet">
+    <link href="{% static "styles/animate.min.css" %}" rel="stylesheet">
+    <link href="{% static "fonts/icomoon/style.css" %}" rel="stylesheet">
+    <link href=" {% static "images/icon.png" %}" rel="shortcut icon" type="image/png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="page-preloader" class="preloader">
+
+    <div class="main">
+        <div class="cell">
+            <div class="pl pl-fade"></div>
+            <div class="pl-name">Uppeople</div>
+        </div>
+    </div>
+
+</div>
+
+<header class="header site-navbar py-1" id="home">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+            <div class="col-6 col-xl-2">
+                <a href="#" class="logo">
+                    <img class="logo_img" src="{% static "images/logo.png" %}"  id="logo_img" alt="Uppeople Lviv">
+                </a>
+            </div>
+
+            <div class="col-10 col-xl-10 d-none d-xl-block">
+                <nav class="site-navigation text-right" role="navigation">
+
+                    <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block" id="site_menu">
+                        <li><a href="#">Про нас</a></li>
+                        <li class="active"><a href="#">Вакансии</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">События</a></li>
+                        <li><a href="#"><span class="rounded bg-primary py-2 px-3 text-white">EN</span></a></li>
+                    </ul>
+                </nav>
+                <div class="col-6 col-xl-2 text-right d-block">
+            <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;">
+                <a href="#" class="site-menu-toggle js-menu-toggle text-black active">
+                    <span class="icon-menu h3"></span>
+                </a>
+            </div>
+
+          </div>
+            </div>
+            <div class="col-6 col-xl-2 text-right d-block">
+
+                <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a
+                        href="#" class="site-menu-toggle js-menu-toggle text-black"><span
+                        class="icon-menu h3"></span></a></div>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="content">
+
+    <div class="container">
+        <div class="post-header">
+            <h1 class="search-title">Приєднуйся до команди</h1>
+            <div class="text-content">
+                <p style="text-align: center;">Двері Uppeople завжди відчинені для захоплених та
+                    допитливих. Це дім для тих, хто не боїться відповідальності та ставиться до життя із оптимістичним
+                    настроєм.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="filter">
+
+        <div class="container">
+
+            {#            <h2 class="filter-label">Технологии</h2>#}
+            <section class="checkbox-section">
+
+                <div class="checkbox">
+                    <input type="checkbox" id="tag-0" name="VacancyFilter" value="JavaScript">
+                    <label for="tag-0">
+                        <span class="vacancy-name">JavaScript</span>
+                        <span class="vacancy-counter">2</span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="tag-1" name="VacancyFilter" value="Net">
+                    <label for="tag-1">
+                        <span class="vacancy-name">.Net</span>
+                        <span class="vacancy-counter">2</span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="tag-2" name="VacancyFilter" value="Frontend">
+                    <label for="tag-2">
+                        <span class="vacancy-name">Frontend</span>
+                        <span class="vacancy-counter">2</span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="tag-3" name="VacancyFilter" value="hr">
+                    <label for="tag-3">
+                        <span class="vacancy-name">hr</span>
+                        <span class="vacancy-counter">2</span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="tag-4" name="VacancyFilter" value="Full Stack">
+                    <label for="tag-4">
+                        <span class="vacancy-name">FullStack</span>
+                        <span class="vacancy-counter">2</span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="tag-5" name="VacancyFilter" value="Golang">
+                    <label for="tag-5">
+                        <span class="vacancy-name">Golang</span>
+                        <span class="vacancy-counter">2</span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="tag-6" name="VacancyFilter" value="Java">
+                    <label for="tag-6">
+                        <span class="vacancy-name">Java</span>
+                        <span class="vacancy-counter">2</span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="tag-7" name="VacancyFilter" value="PHP">
+                    <label for="tag-7">
+                        <span class="vacancy-name">PHP</span>
+                        <span class="vacancy-counter">2</span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="tag-8" name="VacancyFilter" value="Python">
+                    <label for="tag-8">
+                        <span class="vacancy-name">Python</span>
+                        <span class="vacancy-counter">2</span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="tag-9" name="VacancyFilter" value="UI/UX Designer">
+                    <label for="tag-9">
+                        <span class="vacancy-name">UI/UX Designer</span>
+                        <span class="vacancy-counter">2</span>
+                    </label>
+                </div>
+
+                <div class="site-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4" tags="Python" name="job">
+                                <article class="box-item">
+                                    <header class="box-item_header">
+                                        <h3 class="box-item-title">
+                                            <a href="#" class="box-item-title-link">Python</a>
+                                        </h3>
+                                        <div class="hot">
+                                            <div class="hot__bg" style="background-color: #e06287"></div>
+                                            <span class="hot__text" style="color: #e06287">Hot</span>
+                                        </div>
+                                    </header>
+                                    <main class="box-item-description">
+                                        <p>
+                                            Exciting times at Beetroot! We are looking for a friendly and caring office
+                                            life support specialist (office manager) to help us make Beetroot office the
+                                            most pleasant, cozy and functional place to work in Kyiv. You will be one of
+                                            the main people who support other team members to function well, working in
+                                            close collaboration with the management team and the other Beetroot offices.
+                                        </p>
+                                    </main>
+                                    <footer class="box-item-footer">
+                                        <p class="location-text-wrap">
+                                            <span class="location-text">
+                                                Львов
+                                            </span>
+                                        </p>
+                                        <section class="box-item-tags">
+                                            <ul class="tags">
+                                                <li class="tags-item">
+                                                    <div class="lang">
+                                                        <div class="lang__bg"></div>
+                                                        <span class="lang__text">Python</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </footer>
+                                </article>
+                            </div>
+
+                            <div class="col-lg-4" tags="Python" name="job">
+                                <article class="box-item">
+                                    <header class="box-item_header">
+                                        <h3 class="box-item-title">
+                                            <a href="#" class="box-item-title-link">Python</a>
+                                        </h3>
+                                        <div class="hot">
+                                            <div class="hot__bg" style="background-color: #e06287"></div>
+                                            <span class="hot__text" style="color: #e06287">Hot</span>
+                                        </div>
+                                    </header>
+                                    <main class="box-item-description">
+                                        <p>
+                                            Exciting times at Beetroot! We are looking for a friendly and caring office
+                                            life support specialist (office manager) to help us make Beetroot office the
+                                            most pleasant, cozy and functional place to work in Kyiv. You will be one of
+                                            the main people who support other team members to function well, working in
+                                            close collaboration with the management team and the other Beetroot offices.
+                                        </p>
+                                    </main>
+                                    <footer class="box-item-footer">
+                                        <p class="location-text-wrap">
+                                            <span class="location-text">
+                                                Львов
+                                            </span>
+                                        </p>
+                                        <section class="box-item-tags">
+                                            <ul class="tags">
+                                                <li class="tags-item">
+                                                    <div class="lang">
+                                                        <div class="lang__bg"></div>
+                                                        <span class="lang__text">Python</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </footer>
+                                </article>
+                            </div>
+
+                            <div class="col-lg-4" tags="JavaScript" name="job">
+                                <article class="box-item">
+                                    <header class="box-item_header">
+                                        <h3 class="box-item-title">
+                                            <a href="#" class="box-item-title-link">JavaScript</a>
+                                        </h3>
+                                        <div class="hot">
+                                            <div class="hot__bg" style="background-color: #e06287"></div>
+                                            <span class="hot__text" style="color: #e06287">Hot</span>
+                                        </div>
+                                    </header>
+                                    <main class="box-item-description">
+                                        <p>
+                                            Exciting times at Beetroot! We are looking for a friendly and caring office
+                                            life support specialist (office manager) to help us make Beetroot office the
+                                            most pleasant, cozy and functional place to work in Kyiv. You will be one of
+                                            the main people who support other team members to function well, working in
+                                            close collaboration with the management team and the other Beetroot offices.
+                                        </p>
+                                    </main>
+                                    <footer class="box-item-footer">
+                                        <p class="location-text-wrap">
+                                            <span class="location-text">
+                                                Львов
+                                            </span>
+                                        </p>
+                                        <section class="box-item-tags">
+                                            <ul class="tags">
+                                                <li class="tags-item">
+                                                    <div class="lang">
+                                                        <div class="lang__bg"></div>
+                                                        <span class="lang__text">JavaScript</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </footer>
+                                </article>
+                            </div>
+
+                            <div class="col-lg-4" tags="JavaScript" name="job">
+                                <article class="box-item">
+                                    <header class="box-item_header">
+                                        <h3 class="box-item-title">
+                                            <a href="#" class="box-item-title-link">JavaScript</a>
+                                        </h3>
+                                        <div class="hot">
+                                            <div class="hot__bg" style="background-color: #e06287"></div>
+                                            <span class="hot__text" style="color: #e06287">Hot</span>
+                                        </div>
+                                    </header>
+                                    <main class="box-item-description">
+                                        <p>
+                                            Exciting times at Beetroot! We are looking for a friendly and caring office
+                                            life support specialist (office manager) to help us make Beetroot office the
+                                            most pleasant, cozy and functional place to work in Kyiv. You will be one of
+                                            the main people who support other team members to function well, working in
+                                            close collaboration with the management team and the other Beetroot offices.
+                                        </p>
+                                    </main>
+                                    <footer class="box-item-footer">
+                                        <p class="location-text-wrap">
+                                            <span class="location-text">
+                                                Львов
+                                            </span>
+                                        </p>
+                                        <section class="box-item-tags">
+                                            <ul class="tags">
+                                                <li class="tags-item">
+                                                    <div class="lang">
+                                                        <div class="lang__bg"></div>
+                                                        <span class="lang__text">JavaScript</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </footer>
+                                </article>
+                            </div>
+
+                            <div class="col-lg-4" tags="Python" name="job">
+                                <article class="box-item">
+                                    <header class="box-item_header">
+                                        <h3 class="box-item-title">
+                                            <a href="#" class="box-item-title-link">Python</a>
+                                        </h3>
+                                        <div class="hot">
+                                            <div class="hot__bg" style="background-color: #e06287"></div>
+                                            <span class="hot__text" style="color: #e06287">Hot</span>
+                                        </div>
+                                    </header>
+                                    <main class="box-item-description">
+                                        <p>
+                                            Exciting times at Beetroot! We are looking for a friendly and caring office
+                                            life support specialist (office manager) to help us make Beetroot office the
+                                            most pleasant, cozy and functional place to work in Kyiv. You will be one of
+                                            the main people who support other team members to function well, working in
+                                            close collaboration with the management team and the other Beetroot offices.
+                                        </p>
+                                    </main>
+                                    <footer class="box-item-footer">
+                                        <p class="location-text-wrap">
+                                            <span class="location-text">
+                                                Львов
+                                            </span>
+                                        </p>
+                                        <section class="box-item-tags">
+                                            <ul class="tags">
+                                                <li class="tags-item">
+                                                    <div class="lang">
+                                                        <div class="lang__bg"></div>
+                                                        <span class="lang__text">Python</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </footer>
+                                </article>
+                            </div>
+
+                            <div class="col-lg-4" tags="Java" name="job">
+                                <article class="box-item">
+                                    <header class="box-item_header">
+                                        <h3 class="box-item-title">
+                                            <a href="#" class="box-item-title-link">Java</a>
+                                        </h3>
+                                        <div class="hot">
+                                            <div class="hot__bg" style="background-color: #e06287"></div>
+                                            <span class="hot__text" style="color: #e06287">Hot</span>
+                                        </div>
+                                    </header>
+                                    <main class="box-item-description">
+                                        <p>
+                                            Exciting times at Beetroot! We are looking for a friendly and caring office
+                                            life support specialist (office manager) to help us make Beetroot office the
+                                            most pleasant, cozy and functional place to work in Kyiv. You will be one of
+                                            the main people who support other team members to function well, working in
+                                            close collaboration with the management team and the other Beetroot offices.
+                                        </p>
+                                    </main>
+                                    <footer class="box-item-footer">
+                                        <p class="location-text-wrap">
+                                            <span class="location-text">
+                                                Львов
+                                            </span>
+                                        </p>
+                                        <section class="box-item-tags">
+                                            <ul class="tags">
+                                                <li class="tags-item">
+                                                    <div class="lang">
+                                                        <div class="lang__bg"></div>
+                                                        <span class="lang__text">Java</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </footer>
+                                </article>
+                            </div>
+
+
+                            <article class="box-item-message" id="box-item-message">
+
+                                <main class="box-item-description-message">
+                                    <p>
+                                        К сожалению, у нас нет вакансий для вас
+                                    </p>
+                                </main>
+
+                            </article>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </section>
+
+        </div>
+
+    </section>
+
+</section>
+
+<section class="pre-footer wow fadeInUp" data-wow-duration="2.9s">
+    <div class="container container-footer">
+        <div class="row">
+            <div class="col-sm-8 p0">
+                <h3 class="cfa-text">Не видишь подходящей роли?</h3>
+            </div>
+            <div class="col-sm-4">
+                <a href="#" class="btn pre-footer-link">Свяжитесь с нами</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="py-lg-6 py-6 section-footer  ">
+    <div class="container py-sm-5">
+        <div class="row footer-grids">
+            <div class="col-lg-6 mt-6">
+                <div class="logo-area">
+                    <a href="#"><img src="{% static "images/logo.png" %}" alt="Uppeople logo"></a>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-6">
+                <h4 class="footer-company-name">Uppeople Lviv</h4>
+                <ul class="list-info-wthree ml-6">
+                    <li>
+                        <a href="#">Careers</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="copy_right p-3 d-flex">
+    <div class="container">
+        <div class="row d-flex">
+            <div class="col-lg-9 copy_w3pvt">
+                <p class="text-lg-left text-center">© 2019 Uppeople Lviv. All rights reserved
+
+            </div>
+            <!-- move top -->
+            <div class="col-lg-3 move-top text-lg-right text-center">
+                <a href="#home" class="move-top">
+                    <span class="fa fa-angle-double-up mt-3" aria-hidden="true"></span>
+                </a>
+            </div>
+            <!-- move top -->
+        </div>
+    </div>
+
+</div>
+
+<script src="{% static "script/preloader.js" %}"></script>
+<script src="{% static "script/wow.min.js" %}"></script>
+<script src="{% static "script/aos.js" %}"></script>
+<script src="{% static "script/jquery-3.3.1.min.js" %}"></script>
+<script src="{% static "script/main.js" %}"></script>
+
+
+<script>
+    {% for chk in filter %}
+        $("[value = {{ chk }}]").prop("checked", true);
+    {% endfor %}
+</script>
+<script src="{% static "script/script.js" %}"></script>
+<script>filter();</script>
+
+<script>
+    new WOW().init();
+</script>
+
+</body>
+</html>
